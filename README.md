@@ -1,3 +1,5 @@
+Explicações 
+
 1 Estado:
 
 display: Exibe o número ou resultado atual.
