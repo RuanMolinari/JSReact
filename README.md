@@ -1,37 +1,46 @@
-Explicações 
+# React Calculator
 
-1 Estado:
+A small calculator component built with React functional components and the `useState` Hook. The project demonstrates state management, event handling, and basic arithmetic operations in a user interface.
 
-display: Exibe o número ou resultado atual.
-primeiroValor: Armazena o primeiro operando.
-operador: Armazena o operador (+, -, *, /).
+## Features
 
-2 Manipuladores de Clique:
+- Numeric input through buttons.
+- Addition, subtraction, multiplication, and division.
+- Decimal-point input.
+- Clear/reset action.
+- Display of the current value and calculation result.
 
-lidarComCliqueNumero: Adiciona números ao display.
-lidarComCliqueOperador: Armazena o primeiro valor e o operador.
-calcularResultado: Executa o cálculo com base no operador.
-lidarComCliqueIgual: Exibe o resultado.
-lidarComCliqueLimpar: Reseta a calculadora.
+## Implementation
 
-3 JSX:
+The component is defined in `calculadora_react.js` and exported as `Calculadora`.
 
-Cria a interface da calculadora com botões e um display.
-Como usar:
+It uses React state to keep track of:
+- The current display value.
+- The first operand.
+- The selected arithmetic operator.
 
-1 Crie um novo projeto React:
+Button handlers update the state and trigger the corresponding calculation.
 
-Use Create React App: npx create-react-app calculadora-app
-Navegue até o diretório do projeto: cd calculadora-app
+## Run in a React application
 
-2 Substitua o código em src/App.js pelo código acima.
+This repository contains the calculator component, not a complete React/Vite application scaffold. To use it:
 
-3 Inicie o aplicativo:
+1. Create a React project (for example, with Vite).
+2. Add the required React dependencies.
+3. Copy `calculadora_react.js` into the application's source directory.
+4. Import and render the `Calculadora` component.
+5. Add CSS for the `calculadora`, `display`, and `botoes` classes.
 
-npm start
-Isso iniciará o aplicativo em seu navegador, onde você poderá usar a calculadora.
+Example import:
 
-Observações:
+```jsx
+import Calculadora from './calculadora_react';
+```
 
-Este é um exemplo simples. Você pode adicionar mais funcionalidades, como porcentagem, memória e estilos CSS.
-Você pode criar um arquivo CSS separado para estilizar a calculadora.
+## Current limitations
+
+The current implementation is a learning exercise. It does not yet include robust handling for division by zero, invalid numeric input, keyboard interaction, operator precedence, or automated tests.
+
+## Author
+
+Ruan Molinari — [GitHub](https://github.com/RuanMolinari)
